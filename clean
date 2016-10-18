@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker stop eva-mongo
+docker stop eva-backend
+docker stop eva-frontend
+
+docker rm eva-mongo
+docker rm eva-backend
+docker rm eva-frontend
