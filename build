@@ -2,4 +2,4 @@
 
 docker build -t evabase .
 docker build -t eva-backend ./backend --no-cache
-docker build -t eva-frontend ./frontend --no-cache
+docker build -t eva-frontend ./frontend

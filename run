@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run -d --name eva-mongo mongo
+docker run -d -v /opt/eva:/data/db --name eva-mongo mongo
 
 docker run -i -d --link=eva-mongo:eva-mongo --name eva-backend eva-backend
 
