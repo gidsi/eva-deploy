@@ -8,6 +8,10 @@ ENV GOBIN $GOPATH/bin
 RUN git clone https://github.com/gidsi/eva-backend.git eva-backend
 WORKDIR ./eva-backend
 
+ARG SECRET=SECRET
+RUN sed -i "s/<SECRET>/${SECRET}/" config.yaml
+RUN cat config.yaml
+
 RUN go get
 RUN go install
 

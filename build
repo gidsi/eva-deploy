@@ -1,5 +1,5 @@
 #!/bin/bash
 
 docker build -t evabase .
-docker build -t eva-backend ./backend --no-cache
-docker build -t eva-frontend ./frontend
+docker build -t eva-backend ./backend --no-cache --build-arg SECRET=$(cat ./apisecret)
+docker build -t eva-frontend ./frontend --no-cache
