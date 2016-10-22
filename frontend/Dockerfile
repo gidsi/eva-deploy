@@ -13,7 +13,7 @@ RUN npm run deploy
 
 RUN mv dist/* /usr/share/nginx/html
 
-RUN mkdir /tmp/osm/temp
+RUN mkdir -p /tmp/osm/temp
 RUN mkdir /tmp/osm/cache
 
 EXPOSE 80
