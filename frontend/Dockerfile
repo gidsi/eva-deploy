@@ -12,4 +12,5 @@ RUN npm install
 RUN npm run deploy
 
 RUN mv dist/* /usr/share/nginx/html
+RUN mkdir /tmp/osm
 CMD nginx
