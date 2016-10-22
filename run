@@ -3,4 +3,4 @@ docker run -d -v /opt/eva:/data/db --name eva-mongo mongo
 
 docker run -i -d --link=eva-mongo:eva-mongo --name eva-backend eva-backend
 
-docker run -i -d -p80:80 --link=eva-backend:eva-backend --name eva-frontend eva-frontend
+docker run -i -d --link=eva-backend:eva-backend --name eva-frontend eva-frontend

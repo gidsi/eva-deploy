@@ -13,4 +13,6 @@ RUN npm run deploy
 
 RUN mv dist/* /usr/share/nginx/html
 RUN mkdir /tmp/osm
+
+EXPOSE 80
 CMD nginx
