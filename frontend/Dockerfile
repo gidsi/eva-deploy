@@ -9,9 +9,9 @@ RUN git clone https://github.com/gidsi/eva-frontend.git
 WORKDIR eva-frontend
 
 RUN npm install
-RUN npm run deploy
+RUN npm run build
 
-RUN mv dist/* /usr/share/nginx/html
+RUN mv build/* /usr/share/nginx/html
 
 RUN mkdir -p /tmp/osm/temp
 RUN mkdir /tmp/osm/cache
